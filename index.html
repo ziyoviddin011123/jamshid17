@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Car Shop — Add Product</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page-bg">
+      <div class="container">
+        <header>
+          <h1>Car Shop</h1>
+          <p class="subtitle">Добавляй машины — они появятся в каталоге</p>
+        </header>
+
+        <main class="main-grid">
+          <aside class="form-box">
+            <h2>Добавить машину</h2>
+            <div class="field">
+              <input id="name" type="text" placeholder="Car name" />
+            </div>
+            <div class="field">
+              <input id="price" type="number" placeholder="Price (USD)" />
+            </div>
+            <div class="field">
+              <input
+                id="color"
+                type="text"
+                placeholder="Color (e.g. red or #ff0000)"
+              />
+            </div>
+            <div class="field">
+              <input id="year" type="number" placeholder="Year" />
+            </div>
+            <div class="field">
+              <input
+                id="image"
+                type="text"
+                placeholder="Image URL (optional)"
+              />
+            </div>
+            <div class="field">
+              <button id="addBtn" class="add-btn">Add Product</button>
+            </div>
+            <p id="msg" class="msg"></p>
+          </aside>
+
+          <section class="catalog">
+            <div class="controls">
+              <input id="search" placeholder="Search by name..." />
+              <select id="filterColor">
+                <option value="all">All colors</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+              </select>
+              <button id="clearStorage" class="small">Clear saved</button>
+            </div>
+
+            <div id="productList" class="product-list"></div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
